@@ -156,6 +156,7 @@ int main()
 		printf("\t 1 - Cadastrar aluno \n");
 		printf("\t 2 - Consultar aluno \n");
 		printf("\t 3 - Excluir aluno \n"); 
+		printf("\t 4 - Sair do menu \n");
 		printf("\t\n Opção: "); // fim do menu
 
 		scanf("%d", &opcao); // armazenando a escolha do usuario
@@ -180,7 +181,11 @@ int main()
 			system("pause");
 			break;
 			
-		
+		    case 4: 
+		    printf("\t\t\n Obrigada por utilizar o sistema. Volte sempre! \n");
+		    return 0;
+			break;
+		    
 			default:
 			printf("\n\t Sinto muito! Essa opção não está disponível :( \n");
 			system("pause");
